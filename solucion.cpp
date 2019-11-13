@@ -15,7 +15,7 @@ int main(void)
     float v=2;
     float x=5;
     for(int i=0;i<1000;i++){
-        cout<<t<<" "<<v<<endl;
+        cout<<t<<" "<<v<<" "<<x<<endl;
         t=t+DeltaT;
         v = v-(DeltaT*K*x);
         x = x + DeltaT*v;
