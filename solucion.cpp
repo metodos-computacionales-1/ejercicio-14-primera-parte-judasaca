@@ -17,9 +17,8 @@ int main(void)
     for(int i=0;i<1000;i++){
         cout<<t<<" "<<v<<endl;
         t=t+DeltaT;
-        v=v+(DeltaT*f0(t,x,v));
-        x=x+(DeltaT*f1(t,x,v));
-        
+        v = v-(DeltaT*K*x);
+        x = x + DeltaT*v;
     }
     
     return 0;
